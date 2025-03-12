@@ -12,7 +12,7 @@ func changePerson(person *Person) {
 		name: "Vladimir",
 		age:  25,
 	}
-	//fmt.Println("func:", *person.name)
+	fmt.Println("func:", person.name)
 }
 
 func main() {
