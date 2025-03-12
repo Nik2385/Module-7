@@ -7,8 +7,8 @@ type Person struct {
 	age  uint8
 }
 
-func changePerson(person **Person) {
-	*person = &Person{
+func changePerson(person *Person) {
+	person = &Person{
 		name: "Vladimir",
 		age:  25,
 	}
@@ -23,8 +23,7 @@ func main() {
 	}
 
 	fmt.Println(person.name)
-	changePerson(&person)
+	changePerson(person)
 	fmt.Println(person.name)
 
 }
-
